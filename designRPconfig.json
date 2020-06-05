@@ -1,0 +1,13 @@
+{
+    "values": {
+        "minN": 5,
+        "minFrac": 0.75,
+        "minRatio": 8.0,
+        "maxQBeg": 3
+    },
+    "descriptions": {
+        "minN": "minN is the minimum number of good reads for a barcode supporting its mapping. Good means a unique hit to the genome and qBeg=1"
+        "minFrac": "minFrac is the minimum fraction of input reads for the barcode that agree with the preferred mapping."
+        "minRatio": "minRatio is the minimum ratio of reads for preferred mapping over the 2nd-most-frequent mapping."
+    }
+}

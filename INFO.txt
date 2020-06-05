@@ -1,0 +1,3 @@
+Which type of FASTQ files are we using? Single End Reads? Paired End Reads?
+What are the quality metrics?
+

@@ -1,0 +1,104 @@
+{
+    "values": {
+        "debug": false,
+        "modeltest": false,
+        "maxReads": 10000,
+        "minQuality": 10,
+        "flanking": 5,
+        "wobbleAllowed": 2,
+        "minIdentity": 90,
+        "minScore": 15,
+        "delta": 5,
+        "tileSize": 11,
+        "stepSize": 11,
+        "nMapped": 0,
+        "nMapUnique": 0,
+        "nPastEndIgnored": 0,
+        "nPastEndTrumps":  0,
+        "nameToBarcode": {},
+        "tmp_dir": "tmp",
+        "unmapped_fp": "tmp/unmapped",
+        "tmpFNA_fp": "tmp/tmpFNA", 
+        "trunc_fp": "tmp/trunc",
+        "blatcmd": "/opt/anaconda3/bin/blat"
+    },
+    "descriptions": {
+        "modeltest": {
+            "desc": "Boolean If we are running to test if a model works...",
+            "value": false
+        },
+
+        "minQuality": {
+            "desc": "Every nucleotide in a barcode must have at least this quality (in FastQ)",
+            "value": 10
+        },
+        "flanking": {
+            "desc": "The number of nucleotides on each side of a barcode that must match",
+            "value": 5
+        },
+        "wobbleAllowed": {
+            "desc": "Uncertainty in the loc of barcode or end of transposon, on either side of expectation",
+            "value": 2
+        },
+        "minIdentity": {
+            "desc": "minimum %identity for mapping to genome or past-end",
+            "value": 90
+        },
+        "minScore": {
+            "desc": "minimum score for mapping to genome or past-end",
+            "value": 90
+        },
+        "delta": {
+            "desc": "minimum difference in score for considering a hit unique",
+            "value": 5
+        },
+        "BLATparams": {
+            "tileSize": {
+            "desc": "size of an alignment tile",
+            "value": 11
+            },
+            "stepSize": {
+            "desc": "distance between the starting bases of alignment tiles",
+            "value": 11
+            }
+        },
+        "HandleGenomeBLATparams": {
+            "nMapped":{
+                "desc": "",
+                "value":0
+            },
+            "nMapUnique":{
+                "desc": "",
+                "value":0
+            },
+            "nPastEndIgnored":{
+                "desc": "weak hit to past-end ignored",
+                "value":0
+            },
+            "nPastEndTrumps": {
+                "desc": "hit to past-end (close to) as good as hit to genome",
+                "value":0
+            },
+            "nameToBarcode": {
+
+            "value": {}
+            }
+        },
+        "tmp_dir": {
+            "desc": "Where the temporary files such as trunc and unmapped go",
+            "value": "tmp"
+        },
+        "unmapped_fp": {
+            "desc": "Unmapped file path, remains consistent",
+            "value": "tmp/unmapped"
+        },
+        "trunc_fp": {
+            "desc" : "Trunc file path, remains consistent",
+            "value": "tmp/trunc"
+        },
+        "blatcmd": {
+            "desc": "Path to blat executable",
+            "value": "/opt/anaconda3/bin/blat"
+        }
+    }
+}
